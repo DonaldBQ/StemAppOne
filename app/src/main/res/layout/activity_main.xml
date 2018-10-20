@@ -13,54 +13,88 @@
 
     <LinearLayout
 
-        android:paddingTop="20dp"
+        android:paddingTop="40dp"
         android:orientation="vertical"
         android:layout_weight="50"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <Button
+        <com.lid.lib.LabelButtonView
             android:id="@+id/Reading_Button"
-            android:textSize="25sp"
+            android:textSize="20sp"
             android:layout_weight="1"
-            android:background="@drawable/books2"
+            android:background="@drawable/book"
             android:text="READING"
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
-        <Button
-            android:id="@+id/Video_Button"
-            android:textSize="25sp"
-            android:layout_weight="1"
-            android:background="@drawable/video"
-            android:text="VIDEO"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            android:layout_height="match_parent"
+            app:label_backgroundColor="@color/foreground_material_dark"
+            app:label_distance="20dp"
+            app:label_height="20dp"
+            app:label_orientation="RIGHT_TOP"
+            app:label_text="click"
+            app:label_textSize="12sp" />
 
-        <Button
+        <com.lid.lib.LabelButtonView
+            android:id="@+id/Files_Button"
+            android:textSize="20sp"
+            android:layout_weight="1"
+            android:background="@drawable/files"
+            android:text="FILES"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:label_backgroundColor="@color/foreground_material_dark"
+            app:label_distance="20dp"
+            app:label_height="20dp"
+            app:label_orientation="RIGHT_TOP"
+            app:label_text="click"
+            app:label_textSize="12sp" />
+
+        <com.lid.lib.LabelButtonView
             android:id="@+id/Test_Button"
-            android:textSize="25sp"
+            android:textSize="20sp"
             android:layout_weight="1"
             android:background="@drawable/exam"
             android:text="TESTS"
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            android:layout_height="match_parent"
+            app:label_backgroundColor="@color/foreground_material_dark"
+            app:label_distance="20dp"
+            app:label_height="20dp"
+            app:label_orientation="RIGHT_TOP"
+            app:label_text="click"
+            app:label_textSize="12sp" />
 
-        <Button
+        <com.lid.lib.LabelButtonView
             android:id="@+id/Recording_Button"
-            android:textSize="25sp"
+            android:textSize="20sp"
             android:layout_weight="1"
-            android:background="@drawable/recording"
+            android:background="@drawable/video"
             android:text="RECORDING"
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
-        <Button
+            android:layout_height="match_parent"
+            app:label_backgroundColor="@color/foreground_material_dark"
+            app:label_distance="20dp"
+            app:label_height="20dp"
+            app:label_orientation="RIGHT_TOP"
+            app:label_text="click"
+            app:label_textSize="12sp" />
+
+        <com.lid.lib.LabelButtonView
             android:id="@+id/Audio_Button"
-            android:textSize="25sp"
+            android:textSize="20sp"
             android:layout_weight="1"
             android:background="@drawable/audio"
             android:text="AUDIO"
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            android:layout_height="match_parent"
+            app:label_backgroundColor="@color/foreground_material_dark"
+            app:label_distance="20dp"
+            app:label_height="20dp"
+            app:label_orientation="RIGHT_TOP"
+            app:label_text="click"
+            app:label_textSize="12sp" />
+
+
     </LinearLayout>
 
    </RelativeLayout>
