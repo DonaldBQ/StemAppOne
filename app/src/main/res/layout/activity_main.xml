@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:theme="@style/StemLearningWorldTheme"
+    android:weightSum="100"
+    android:background="@color/background_material_dark"
+    tools:context="com.stemlearningworld.stem_app_one.MainActivity">
+
+
+    <LinearLayout
+
+        android:paddingTop="20dp"
+        android:orientation="vertical"
+        android:layout_weight="50"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/Reading_Button"
+            android:textSize="25sp"
+            android:layout_weight="1"
+            android:background="@drawable/books2"
+            android:text="READING"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <Button
+            android:id="@+id/Video_Button"
+            android:textSize="25sp"
+            android:layout_weight="1"
+            android:background="@drawable/video"
+            android:text="VIDEO"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <Button
+            android:id="@+id/Test_Button"
+            android:textSize="25sp"
+            android:layout_weight="1"
+            android:background="@drawable/exam"
+            android:text="TESTS"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <Button
+            android:id="@+id/Recording_Button"
+            android:textSize="25sp"
+            android:layout_weight="1"
+            android:background="@drawable/recording"
+            android:text="RECORDING"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <Button
+            android:id="@+id/Audio_Button"
+            android:textSize="25sp"
+            android:layout_weight="1"
+            android:background="@drawable/audio"
+            android:text="AUDIO"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+   </RelativeLayout>
