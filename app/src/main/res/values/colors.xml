@@ -1,13 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#FF4081</color>
-    <color name="primary_material_dark">#941880</color>
-    <color name="background_material_dark">#941880</color>
-    <color name="foreground_material_dark">#a5c921</color>
-    <color name="black">#000000</color>
-    <color name="primary_dark_material_dark">#a5c921</color>
-    <color name="accent_material_dark">#a5c921</color>
-    <color name="text_color_primary">#ffffff</color>
+    <color name="primary">#2196F3</color>
+    <color name="primary_dark">#1976D2</color>
+    <color name="primary_light">#BBDEFB</color>
+    <color name="accent">#FF9800</color>
+    <color name="primary_text">#FFFFFF</color>
+    <color name="secondary_text">#757575</color>
+    <color name="icons">#FFFFFF</color>
+    <color name="divider">#BDBDBD</color>
+    <color name="primary_material_dark">#2196f3</color>
+    <color name="primary_dark_material_dark">#1976d2</color>
+    <color name="accent_material_dark">#ff9800</color>
+    <color name="text_color_primary">#212121</color>
+    <color name="text_color_secondary">#757575</color>
+    <color name="background_material_dark">#ffffff</color>
+
+    <color name="audiocolor">#ffc400</color>
+    <color name="audiocolorlight">#ffd740</color>
+
+    <color name="filescolor">#00e676</color>
+    <color name="filescolorlight">#69f0ae</color>
+
+    <color name="videocolor">#00e5ff</color>
+    <color name="videocolorlight">#00f5ff</color>
+
+    <color name="testcolor">#880e4f</color>
+    <color name="testcolorlight">#ad1457</color>
+
+    <color name="paymentcolor">#00e676</color>
+    <color name="paymentcolorlight">#00d676</color>
+
+    <color name="bookcolor">#4a148c</color>
+    <color name="bookcolorlight">#7c4dff</color>
+
+    <color name="recordingcolor">#00b8d4</color>
+    <color name="recordingcolorlight">#00c8d4</color>
+
+    <color name="smartcolor">#283593</color>
+    <color name="smartcolorlight">#5c6bc0</color>
+
+    <color name="homeworkcolor">#ff6f00</color>
+    <color name="homeworkcolorlight">#ffab00</color>
 </resources>
