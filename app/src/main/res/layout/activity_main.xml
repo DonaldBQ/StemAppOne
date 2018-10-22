@@ -21,6 +21,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="vertical"
+
                 >
                 <TextView
 
@@ -42,6 +43,7 @@
                 android:layout_height="match_parent"
                 android:orientation="horizontal"
                 android:weightSum="3"
+                android:elevation="10dp"
 
                 >
                 <LinearLayout
@@ -51,6 +53,8 @@
                     android:layout_margin="2dp"
                     android:orientation="vertical"
                     android:background="@color/filescolor"
+                    android:elevation="10dp"
+
 
                     >
                     <ImageView
@@ -71,6 +75,7 @@
                         android:text="Files"
                         android:textColor="@color/icons"
                         android:textAlignment="center"
+                        android:elevation="10dp"
 
                         />
 
@@ -83,6 +88,7 @@
                     android:layout_margin="2dp"
                     android:orientation="vertical"
                     android:background="@color/audiocolor"
+                    android:elevation="10dp"
 
                     >
                     <ImageView
@@ -107,12 +113,15 @@
                 </LinearLayout>
 
                 <LinearLayout
+                    android:id="@+id/bookButton"
+                    android:clickable="true"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:layout_margin="2dp"
                     android:orientation="vertical"
                     android:background="@color/bookcolor"
+                    android:elevation="10dp"
 
                     >
                     <ImageView
@@ -147,6 +156,7 @@
                 android:layout_height="match_parent"
                 android:orientation="horizontal"
                 android:weightSum="3"
+                android:elevation="10dp"
                 >
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -155,6 +165,7 @@
                     android:layout_margin="2dp"
                     android:orientation="vertical"
                     android:background="@color/videocolor"
+                    android:elevation="10dp"
 
                     >
                     <ImageView
@@ -186,6 +197,7 @@
                     android:layout_margin="2dp"
                     android:orientation="vertical"
                     android:background="@color/testcolor"
+                    android:elevation="10dp"
 
                     >
                     <ImageView
@@ -216,6 +228,7 @@
                     android:layout_margin="2dp"
                     android:orientation="vertical"
                     android:background="@color/paymentcolor"
+                    android:elevation="10dp"
 
                     >
                     <ImageView
@@ -250,6 +263,7 @@
                 android:layout_height="match_parent"
                 android:orientation="horizontal"
                 android:weightSum="3"
+                android:elevation="10dp"
                 >
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -258,6 +272,7 @@
                     android:layout_margin="2dp"
                     android:orientation="vertical"
                     android:background="@color/recordingcolor"
+                    android:elevation="10dp"
 
                     >
                     <ImageView
@@ -289,6 +304,7 @@
                     android:layout_margin="2dp"
                     android:orientation="vertical"
                     android:background="@color/smartcolor"
+                    android:elevation="10dp"
 
                     >
                     <ImageView
@@ -320,6 +336,7 @@
                     android:layout_margin="2dp"
                     android:orientation="vertical"
                     android:background="@color/homeworkcolor"
+                    android:elevation="10dp"
 
                     >
                     <ImageView
