@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:background="@color/primary_dark">
+    android:background="@color/icons">
 
 
     android:layout_width="wrap_content"
@@ -11,7 +11,7 @@
     <ImageView android:id="@+id/logosplash"
         android:layout_width="wrap_content"
         android:layout_height="fill_parent"
-        android:src="@drawable/marshall2"
+        android:src="@drawable/aiapps_logo_trans"
         android:layout_gravity="center"/>
 
 

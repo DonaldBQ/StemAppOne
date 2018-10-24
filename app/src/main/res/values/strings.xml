@@ -1,3 +1,16 @@
 <resources>
-    <string name="app_name">Stem-App-One</string>
+    <string name="app_name">Racoon App</string>
+    <string name="Settings_name">Settings</string>
+    <string name="Files_name">Files</string>
+    <string name="Audio_name">Audio</string>
+    <string name="Reading_name">Reading</string>
+    <string name="Video_name">Video</string>
+    <string name="Exams_name">Exams</string>
+    <string name="Payment_name">Payment</string>
+    <string name="RecordingTool_name">Recording Tool</string>
+    <string name="StemTools_name">Stem Tools</string>
+    <string name="Homework_name">Homework</string>
+    <string name="company_name">STEM Learning Center</string>
+    <string name="about_name">About</string>
+
 </resources>

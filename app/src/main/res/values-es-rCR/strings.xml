@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Racoon App</string>
+    <string name="Settings_name">Configuracion</string>
+    <string name="Files_name">Archivos</string>
+    <string name="Audio_name">Audio</string>
+    <string name="Reading_name">Lectura</string>
+    <string name="Video_name">Video</string>
+    <string name="Exams_name">Examenes</string>
+    <string name="Payment_name">Pagos</string>
+    <string name="RecordingTool_name">Herramienta grabar</string>
+    <string name="StemTools_name">Herramientas Stem</string>
+    <string name="Homework_name">Tarea</string>
+    <string name="company_name">Centro de Aprendizaje STEM</string>
+    <string name="about_name">Acerca de</string>
+
+</resources>

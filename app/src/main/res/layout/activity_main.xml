@@ -19,21 +19,24 @@
         >
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:orientation="vertical"
 
                 >
+
                 <TextView
 
                     android:layout_width="match_parent"
-                    android:layout_height="240dp"
-                    android:background="@drawable/banner1"
-                    android:textAlignment="center"
-                    android:text="Centro de Aprendizaje STEM"
-                    android:textSize="24sp"
+                    android:layout_height="300dp"
+                    android:background="@drawable/banner_logo"
+                    android:textAlignment="textStart"
+                    android:paddingBottom="10dp"
+                    android:fontFamily="@font/montserratlight"
+                    android:text="@string/company_name"
+                    android:textSize="18sp"
                     android:gravity="bottom"
                     android:textColor="@color/foreground_material_dark"
-                    />
+                    tools:ignore="RtlCompat" />
 
 
             <!--First row-->
@@ -62,7 +65,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="3dp"
                         android:layout_gravity="center"
-                        android:src="@drawable/ic_action_folder_open"
+                        android:src="@mipmap/ic_action_folder_open"
                         android:tint="@color/icons"
                         />
                     <TextView
@@ -72,10 +75,10 @@
                         android:padding="5dp"
                         android:layout_marginTop="30dp"
                         android:background="@color/filescolorlight"
-                        android:text="Files"
+                        android:text="@string/Files_name"
                         android:textColor="@color/icons"
                         android:textAlignment="center"
-                        android:elevation="10dp"
+                        android:fontFamily="@font/montserratlight"
 
                         />
 
@@ -96,7 +99,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="3dp"
                         android:layout_gravity="center"
-                        android:src="@drawable/ic_action_headphones"
+                        android:src="@mipmap/ic_action_headphones"
                         android:tint="@color/icons"
                         />
                     <TextView
@@ -105,9 +108,10 @@
                         android:padding="5dp"
                         android:layout_marginTop="30dp"
                         android:background="@color/audiocolorlight"
-                        android:text="Audio"
+                        android:text="@string/Audio_name"
                         android:textColor="@color/icons"
                         android:textAlignment="center"
+                        android:fontFamily="@font/montserratlight"
 
                         />
                 </LinearLayout>
@@ -129,7 +133,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="3dp"
                         android:layout_gravity="center"
-                        android:src="@drawable/ic_action_book"
+                        android:src="@mipmap/ic_action_book"
                         android:tint="@color/icons"
                         />
                     <TextView
@@ -138,9 +142,10 @@
                         android:padding="5dp"
                         android:layout_marginTop="30dp"
                         android:background="@color/bookcolorlight"
-                        android:text="Reading"
+                        android:text="@string/Reading_name"
                         android:textColor="@color/icons"
                         android:textAlignment="center"
+                        android:fontFamily="@font/montserratlight"
 
                         />
 
@@ -159,6 +164,7 @@
                 android:elevation="10dp"
                 >
                 <LinearLayout
+                    android:id="@+id/videoButton"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
@@ -173,7 +179,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="3dp"
                         android:layout_gravity="center"
-                        android:src="@drawable/ic_action_movie"
+                        android:src="@mipmap/ic_action_movie"
                         android:tint="@color/icons"
                         />
                     <TextView
@@ -182,9 +188,10 @@
                         android:padding="5dp"
                         android:layout_marginTop="30dp"
                         android:background="@color/videocolorlight"
-                        android:text="Video"
+                        android:text="@string/Video_name"
                         android:textColor="@color/icons"
                         android:textAlignment="center"
+                        android:fontFamily="@font/montserratlight"
 
                         />
 
@@ -205,7 +212,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="3dp"
                         android:layout_gravity="center"
-                        android:src="@drawable/ic_action_paste"
+                        android:src="@mipmap/ic_action_paste"
                         android:tint="@color/icons"
                         />
                     <TextView
@@ -214,9 +221,10 @@
                         android:padding="5dp"
                         android:layout_marginTop="30dp"
                         android:background="@color/testcolorlight"
-                        android:text="Exams"
+                        android:text="@string/Exams_name"
                         android:textColor="@color/icons"
                         android:textAlignment="center"
+                        android:fontFamily="@font/montserratlight"
 
                         />
                 </LinearLayout>
@@ -236,7 +244,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="3dp"
                         android:layout_gravity="center"
-                        android:src="@drawable/ic_action_calendar_day"
+                        android:src="@mipmap/ic_action_calendar_month"
                         android:tint="@color/icons"
                         />
                     <TextView
@@ -245,9 +253,10 @@
                         android:padding="5dp"
                         android:layout_marginTop="30dp"
                         android:background="@color/paymentcolorlight"
-                        android:text="Payment"
+                        android:text="@string/Payment_name"
                         android:textColor="@color/icons"
                         android:textAlignment="center"
+                        android:fontFamily="@font/montserratlight"
 
                         />
                 </LinearLayout>
@@ -280,7 +289,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="3dp"
                         android:layout_gravity="center"
-                        android:src="@drawable/ic_action_video"
+                        android:src="@mipmap/ic_action_youtube"
                         android:tint="@color/icons"
                         />
                     <TextView
@@ -289,9 +298,10 @@
                         android:padding="5dp"
                         android:layout_marginTop="30dp"
                         android:background="@color/recordingcolorlight"
-                        android:text="Recording Tool"
+                        android:text="@string/RecordingTool_name"
                         android:textColor="@color/icons"
                         android:textAlignment="center"
+                        android:fontFamily="@font/montserratlight"
 
                         />
 
@@ -312,7 +322,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="3dp"
                         android:layout_gravity="center"
-                        android:src="@drawable/ic_action_lab"
+                        android:src="@mipmap/ic_action_lab"
                         android:tint="@color/icons"
                         />
                     <TextView
@@ -321,9 +331,10 @@
                         android:padding="5dp"
                         android:layout_marginTop="30dp"
                         android:background="@color/smartcolorlight"
-                        android:text="STEM Tools"
+                        android:text="@string/StemTools_name"
                         android:textColor="@color/icons"
                         android:textAlignment="center"
+                        android:fontFamily="@font/montserratlight"
 
                         />
 
@@ -344,7 +355,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="3dp"
                         android:layout_gravity="center"
-                        android:src="@drawable/ic_action_bus"
+                        android:src="@mipmap/ic_action_home"
                         android:tint="@color/icons"
                         />
                     <TextView
@@ -353,112 +364,15 @@
                         android:padding="5dp"
                         android:layout_marginTop="30dp"
                         android:background="@color/homeworkcolorlight"
-                        android:text="Homework"
+                        android:text="@string/Homework_name"
                         android:textColor="@color/icons"
                         android:textAlignment="center"
+                        android:fontFamily="@font/montserratlight"
 
                         />
-
                 </LinearLayout>
-
             </LinearLayout>
-
-
             <!-- End third row-->
-
-
-
-
-
         </LinearLayout>
-
-
-
     </ScrollView>
-    <!--<LinearLayout
-
-        android:paddingTop="60dp"
-        android:orientation="vertical"
-        android:layout_weight="50"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-        <com.lid.lib.LabelButtonView
-            android:id="@+id/Reading_Button"
-            android:textSize="20sp"
-            android:layout_weight="1"
-            android:background="@drawable/book"
-            android:text="READING"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            app:label_backgroundColor="@color/foreground_material_dark"
-            app:label_distance="20dp"
-            app:label_height="20dp"
-            app:label_orientation="RIGHT_TOP"
-            app:label_text="click"
-            app:label_textSize="12sp" />
-
-        <com.lid.lib.LabelButtonView
-            android:id="@+id/Files_Button"
-            android:textSize="20sp"
-            android:layout_weight="1"
-            android:background="@drawable/files"
-            android:text="FILES"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            app:label_backgroundColor="@color/foreground_material_dark"
-            app:label_distance="20dp"
-            app:label_height="20dp"
-            app:label_orientation="RIGHT_TOP"
-            app:label_text="click"
-            app:label_textSize="12sp" />
-
-        <com.lid.lib.LabelButtonView
-            android:id="@+id/Test_Button"
-            android:textSize="20sp"
-            android:layout_weight="1"
-            android:background="@drawable/exam"
-            android:text="TESTS"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            app:label_backgroundColor="@color/foreground_material_dark"
-            app:label_distance="20dp"
-            app:label_height="20dp"
-            app:label_orientation="RIGHT_TOP"
-            app:label_text="click"
-            app:label_textSize="12sp" />
-
-        <com.lid.lib.LabelButtonView
-            android:id="@+id/Recording_Button"
-            android:textSize="20sp"
-            android:layout_weight="1"
-            android:background="@drawable/video"
-            android:text="RECORDING"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            app:label_backgroundColor="@color/foreground_material_dark"
-            app:label_distance="20dp"
-            app:label_height="20dp"
-            app:label_orientation="RIGHT_TOP"
-            app:label_text="click"
-            app:label_textSize="12sp" />
-
-        <com.lid.lib.LabelButtonView
-            android:id="@+id/Audio_Button"
-            android:textSize="20sp"
-            android:layout_weight="1"
-            android:background="@drawable/audio"
-            android:text="AUDIO"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            app:label_backgroundColor="@color/foreground_material_dark"
-            app:label_distance="20dp"
-            app:label_height="20dp"
-            app:label_orientation="RIGHT_TOP"
-            app:label_text="click"
-            app:label_textSize="12sp" />
-
-
-    </LinearLayout>-->
-
-   </LinearLayout>
+</LinearLayout>

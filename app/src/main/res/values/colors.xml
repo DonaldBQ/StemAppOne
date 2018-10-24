@@ -15,17 +15,17 @@
     <color name="text_color_secondary">#757575</color>
     <color name="background_material_dark">#ffffff</color>
 
-    <color name="audiocolor">#ffc400</color>
-    <color name="audiocolorlight">#ffd740</color>
+    <color name="audiocolor">#ffc500</color>
+    <color name="audiocolorlight">#ffd340</color>
 
-    <color name="filescolor">#00e676</color>
-    <color name="filescolorlight">#69f0ae</color>
+    <color name="filescolor">#ff9900</color>
+    <color name="filescolorlight">#ff7900</color>
 
     <color name="videocolor">#00e5ff</color>
     <color name="videocolorlight">#00f5ff</color>
 
-    <color name="testcolor">#880e4f</color>
-    <color name="testcolorlight">#ad1457</color>
+    <color name="testcolor">#bf6030</color>
+    <color name="testcolorlight">#a63800</color>
 
     <color name="paymentcolor">#00e676</color>
     <color name="paymentcolorlight">#00d676</color>
@@ -39,6 +39,6 @@
     <color name="smartcolor">#283593</color>
     <color name="smartcolorlight">#5c6bc0</color>
 
-    <color name="homeworkcolor">#ff6f00</color>
-    <color name="homeworkcolorlight">#ffab00</color>
+    <color name="homeworkcolor">#ffa273</color>
+    <color name="homeworkcolorlight">#ff8040</color>
 </resources>
