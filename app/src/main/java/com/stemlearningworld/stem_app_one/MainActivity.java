@@ -38,6 +38,15 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
+        LinearLayout FilesLayout = (LinearLayout)findViewById(R.id.filesbutton);
+        // Implement it's on click listener.
+        FilesLayout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, FilesActivity.class));
+
+            }
+        });
 
     }
     @Override

@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Racoon App</string>
+    <string name="app_name">Racoon</string>
     <string name="Settings_name">Settings</string>
     <string name="Files_name">Files</string>
     <string name="Audio_name">Audio</string>
@@ -12,5 +12,18 @@
     <string name="Homework_name">Homework</string>
     <string name="company_name">STEM Learning Center</string>
     <string name="about_name">About</string>
+
+    <!--Folder Activity-->
+    <string name="Group1_name">Group 1</string>
+    <string name="Group2_name">Group 2</string>
+    <string name="Group3_name">Group 3</string>
+    <string name="Practices_name">Practices</string>
+    <string name="Books_name">Books</string>
+    <string name="Photos_name">Photos</string>
+    <string name="Manual_name">Manual</string>
+    <string name="Other_name">Other</string>
+    <string name="Teacher_name">Teacher</string>
+
+
 
 </resources>
