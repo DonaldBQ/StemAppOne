@@ -1,0 +1,86 @@
+{
+  "project_info": {
+    "project_number": "283017946283",
+    "firebase_url": "https://stemappone.firebaseio.com",
+    "project_id": "stemappone",
+    "storage_bucket": "stemappone.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:283017946283:android:7f46d0207fb22307",
+        "android_client_info": {
+          "package_name": "com.stemlearningworld.calypso"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "283017946283-kpgfgmpevq2dttpjobqiimsb0g0s5kf4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCL3x652SI17Upy46ELNPgFKkV8J_BskI8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:283017946283:android:b17eda7ccdecc62d",
+        "android_client_info": {
+          "package_name": "com.stemlearningworld.stem_app_one"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "283017946283-ru35icpa6mi6m21bial4p20ut6cv5h2g.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.stemlearningworld.stem_app_one",
+            "certificate_hash": "4d62f5f4c4747e1bf24845acaaa5a246e83f2854"
+          }
+        },
+        {
+          "client_id": "283017946283-kpgfgmpevq2dttpjobqiimsb0g0s5kf4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCL3x652SI17Upy46ELNPgFKkV8J_BskI8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "283017946283-kpgfgmpevq2dttpjobqiimsb0g0s5kf4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

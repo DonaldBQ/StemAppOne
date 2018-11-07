@@ -11,6 +11,8 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.LinearLayout;
 
+import com.google.firebase.auth.FirebaseAuth;
+
 public class MainActivity extends AppCompatActivity {
 
 
@@ -19,7 +21,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-// First get the LinearLayout object.
+
+
+        // First get the LinearLayout object.
         LinearLayout linearLayout = (LinearLayout)findViewById(R.id.bookButton);
         // Implement it's on click listener.
         linearLayout.setOnClickListener(new View.OnClickListener() {
