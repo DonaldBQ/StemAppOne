@@ -55,6 +55,9 @@
 
     <string name="failed">FAILED</string>
 
+    <string name="APP_KEY">APP_KEY_HERE</string>
+    <string name="sign_in">Sign in</string>
+
 </resources>
 
 

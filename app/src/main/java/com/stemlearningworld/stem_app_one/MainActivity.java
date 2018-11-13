@@ -16,6 +16,7 @@ import com.google.firebase.auth.FirebaseAuth;
 public class MainActivity extends AppCompatActivity {
 
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -42,6 +43,7 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
+        // First get the LinearLayout object.
         LinearLayout FilesLayout = (LinearLayout)findViewById(R.id.filesbutton);
         // Implement it's on click listener.
         FilesLayout.setOnClickListener(new View.OnClickListener() {
@@ -51,6 +53,7 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
+
 
     }
     @Override
@@ -101,4 +104,5 @@ public class MainActivity extends AppCompatActivity {
                 return super.onOptionsItemSelected(item);
         }
     }
+
 }
