@@ -10,11 +10,27 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.LinearLayout;
+import android.widget.Toast;
 
+import com.google.android.gms.common.internal.safeparcel.SafeParcelable;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
 public class MainActivity extends AppCompatActivity {
 
+    public static String dir1;
+
+    //Read Database
+    FirebaseDatabase firebaseDatabase;
+    DatabaseReference databaseReference;
+
+
+
+    //End Read Databased
 
 
     @Override
@@ -22,23 +38,52 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        firebaseDatabase = FirebaseDatabase.getInstance();
+        databaseReference = firebaseDatabase.getReferenceFromUrl("https://stemappone.firebaseio.com/");
 
 
         // First get the LinearLayout object.
-        LinearLayout linearLayout = (LinearLayout)findViewById(R.id.bookButton);
+        LinearLayout StudentBookLayout = (LinearLayout)findViewById(R.id.bookButton);
         // Implement it's on click listener.
-        linearLayout.setOnClickListener(new View.OnClickListener() {
+        StudentBookLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                dir1 = "https://firebasestorage.googleapis.com/v0/b/stemappone.appspot.com/o/Books%2FSide_by_Side_1_Students_Book.pdf?alt=media&token=65265be3-b1fc-4641-9941-8a42c2142044";
                 startActivity(new Intent(MainActivity.this, pdfreaderActivity.class));
 
             }
         });
+        LinearLayout WorkBookLayout = (LinearLayout)findViewById(R.id.workbookButton);
+        // Implement it's on click listener.
+        WorkBookLayout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                dir1 = "https://firebasestorage.googleapis.com/v0/b/stemappone.appspot.com/o/Books%2FSide_by_Side_1_Activity_Workbook.pdf?alt=media&token=07702c48-6d4f-420a-9bdb-c68a6048630b";
+                startActivity(new Intent(MainActivity.this, pdfreaderActivity.class));
+
+            }
+        });
+
+
         LinearLayout YoutubeLayout = (LinearLayout)findViewById(R.id.videoButton);
         // Implement it's on click listener.
         YoutubeLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                DatabaseReference mChild = databaseReference.child("video");
+                mChild.addValueEventListener(new ValueEventListener() {
+                    @Override
+                    public void onDataChange(DataSnapshot dataSnapshot) {
+                        String videoDir = dataSnapshot.getValue(String.class);
+                        dir1 = videoDir;
+                    }
+
+                    @Override
+                    public void onCancelled(DatabaseError databaseError) {
+
+                    }
+                });
+
                 startActivity(new Intent(MainActivity.this, youtubeActivity.class));
 
             }
@@ -49,11 +94,23 @@ public class MainActivity extends AppCompatActivity {
         FilesLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                //Toast.makeText(MainActivity.this, ""+DatoDB, Toast.LENGTH_SHORT).show();
                 startActivity(new Intent(MainActivity.this, FilesActivity.class));
 
             }
         });
 
+        LinearLayout DictionaryLayout = (LinearLayout)findViewById(R.id.wordref);
+        // Implement it's on click listener.
+        DictionaryLayout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+               Intent intent = new Intent(Intent.ACTION_VIEW);
+               intent.setData(Uri.parse("http://www.wordreference.com/"));
+               startActivity(intent);
+
+            }
+        });
 
     }
     @Override

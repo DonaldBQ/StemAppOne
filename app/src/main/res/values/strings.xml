@@ -3,13 +3,13 @@
     <string name="Settings_name">Settings</string>
     <string name="Files_name">Files</string>
     <string name="Audio_name">Audio</string>
-    <string name="Reading_name">Reading</string>
+    <string name="Reading_name">Student Book</string>
     <string name="Video_name">Video</string>
     <string name="Exams_name">Exams</string>
     <string name="Payment_name">Payment</string>
     <string name="RecordingTool_name">Recording Tool</string>
     <string name="StemTools_name">Stem Tools</string>
-    <string name="Homework_name">Homework</string>
+    <string name="Homework_name">Workbook</string>
     <string name="company_name">STEM Learning Center</string>
     <string name="about_name">About</string>
 
@@ -18,7 +18,7 @@
     <string name="Group2_name">Group 2</string>
     <string name="Group3_name">Group 3</string>
     <string name="Practices_name">Practices</string>
-    <string name="Books_name">Books</string>
+    <string name="Books_name">Student Book</string>
     <string name="Photos_name">Photos</string>
     <string name="Manual_name">Manual</string>
     <string name="Other_name">Other</string>
@@ -52,6 +52,9 @@
     <string name="btn_sign_out">Sign Out</string>
     <string name="lbl_forgot_password">Forgot password?</string>
     <string name="forgot_password_msg">We just need your registered Email Id to sent you password reset instructions.</string>
+    <string name="word_ref">Word Reference</string>
+
+
 
     <string name="failed">FAILED</string>
 

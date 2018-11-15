@@ -10,7 +10,7 @@ import com.pierfrancescosoffritti.androidyoutubeplayer.player.listeners.YouTubeP
 
 public class youtubeActivity extends AppCompatActivity {
 
-    String videoId = "xuOs8tz7Tcs";
+    //String videoId = "vUAQNCEXxAc";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -28,7 +28,7 @@ public class youtubeActivity extends AppCompatActivity {
                                 new AbstractYouTubePlayerListener() {
                                     @Override
                                     public void onReady() {
-                                        initializedYouTubePlayer.loadVideo(videoId, 0);
+                                        initializedYouTubePlayer.loadVideo(MainActivity.dir1, 0);
                                     }
                                 });
                     }
