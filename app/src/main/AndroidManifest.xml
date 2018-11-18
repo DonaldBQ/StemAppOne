@@ -6,6 +6,7 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="ACCESS"
 
     <application
         android:allowBackup="true"
@@ -58,6 +59,12 @@
             </intent-filter>
         </activity>
         <activity android:name=".signup">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+            </intent-filter>
+        </activity>
+        <activity android:name=".LightTester">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
 

@@ -45,7 +45,14 @@ dependencies {
     implementation 'com.dropbox.core:dropbox-core-sdk:3.0.10'
     implementation 'com.squareup.picasso:picasso:2.5.2'
 
+    //Para usar la librería de graficas
+}
+repositories {
+    maven { url 'https://jitpack.io' }
+}
 
+dependencies {
+    implementation 'com.github.PhilJay:MPAndroidChart:v3.1.0-alpha'
 }
 
 apply plugin: 'com.google.gms.google-services'
