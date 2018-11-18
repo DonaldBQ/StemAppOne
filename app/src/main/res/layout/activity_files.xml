@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:theme="@style/StemLearningWorldTheme"
-    android:background="@color/background_material_dark"
+
     android:weightSum="10"
     tools:context="com.stemlearningworld.stem_app_one.FilesActivity">
 
@@ -41,6 +40,7 @@
 
             <!--First row-->
             <LinearLayout
+                android:baselineAligned="false"
                 android:layout_weight="1"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -69,6 +69,7 @@
                         android:src="@mipmap/ic_action_folder_closed"
                         android:tint="@color/icons"
                         android:elevation="15dp"
+                        android:contentDescription="@null"
 
                         />
                     <TextView
@@ -89,7 +90,6 @@
                 </RelativeLayout>
 
                 <RelativeLayout
-                    android:id="@+id/file_group2"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
@@ -109,6 +109,7 @@
                         android:src="@mipmap/ic_action_folder_closed"
                         android:tint="@color/icons"
                         android:elevation="15dp"
+                        android:contentDescription="@null"
 
                         />
                     <TextView
@@ -129,7 +130,6 @@
                 </RelativeLayout>
 
                 <RelativeLayout
-                    android:id="@+id/file_group3"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
@@ -148,6 +148,7 @@
                         android:src="@mipmap/ic_action_folder_closed"
                         android:tint="@color/icons"
                         android:elevation="15dp"
+                        android:contentDescription="@null"
 
                         />
                     <TextView
@@ -171,6 +172,7 @@
             <!--End First row-->
             <!--Second row-->
             <LinearLayout
+                android:baselineAligned="false"
                 android:layout_weight="1"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -180,7 +182,6 @@
 
                 >
                 <RelativeLayout
-                    android:id="@+id/file_practices"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
@@ -199,6 +200,7 @@
                         android:src="@mipmap/ic_action_folder_closed"
                         android:tint="@color/icons"
                         android:elevation="15dp"
+                        android:contentDescription="@null"
 
                         />
                     <TextView
@@ -219,7 +221,6 @@
                 </RelativeLayout>
 
                 <RelativeLayout
-                    android:id="@+id/file_books"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
@@ -238,6 +239,7 @@
                         android:src="@mipmap/ic_action_folder_closed"
                         android:tint="@color/icons"
                         android:elevation="15dp"
+                        android:contentDescription="@null"
 
                         />
                     <TextView
@@ -258,7 +260,6 @@
                 </RelativeLayout>
 
                 <RelativeLayout
-                    android:id="@+id/file_photos"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
@@ -277,6 +278,7 @@
                         android:src="@mipmap/ic_action_folder_closed"
                         android:tint="@color/icons"
                         android:elevation="15dp"
+                        android:contentDescription="@null"
 
                         />
                     <TextView
@@ -300,6 +302,7 @@
             <!--End second row-->
             <!--Third row-->
             <LinearLayout
+                android:baselineAligned="false"
                 android:layout_weight="1"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -309,7 +312,6 @@
 
                 >
                 <RelativeLayout
-                    android:id="@+id/file_manual"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
@@ -328,6 +330,7 @@
                         android:src="@mipmap/ic_action_folder_closed"
                         android:tint="@color/icons"
                         android:elevation="15dp"
+                        android:contentDescription="@null"
 
                         />
                     <TextView
@@ -348,7 +351,6 @@
                 </RelativeLayout>
 
                 <RelativeLayout
-                    android:id="@+id/file_other"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
@@ -367,6 +369,7 @@
                         android:src="@mipmap/ic_action_folder_closed"
                         android:tint="@color/icons"
                         android:elevation="15dp"
+                        android:contentDescription="@null"
 
                         />
                     <TextView
@@ -392,6 +395,7 @@
 
             <!-- End third row-->
             <LinearLayout
+                android:baselineAligned="false"
                 android:layout_weight="1"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -401,8 +405,7 @@
 
                 >
                 <RelativeLayout
-                    android:id="@+id/file_teacher"
-                    android:layout_width="match_parent"
+                    android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:layout_margin="2dp"
@@ -421,6 +424,7 @@
                         android:src="@mipmap/ic_action_folder_closed"
                         android:tint="@color/icons"
                         android:elevation="15dp"
+                        android:contentDescription="@null"
 
                         />
                     <TextView

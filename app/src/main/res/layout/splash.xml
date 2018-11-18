@@ -4,20 +4,18 @@
     android:layout_height="fill_parent"
     android:background="@color/icons">
 
-
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content">
-
-    <ImageView android:id="@+id/logosplash"
+    <ImageView
         android:layout_width="wrap_content"
         android:layout_height="fill_parent"
         android:src="@drawable/aiapps_logo_trans"
-        android:layout_gravity="center"/>
+        android:layout_gravity="center"
+        android:contentDescription="@null"
+        />
 
 
 
     <TextView android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="STEM Learning World"/>
+        android:text="@string/company_name"/>
 
 </LinearLayout>

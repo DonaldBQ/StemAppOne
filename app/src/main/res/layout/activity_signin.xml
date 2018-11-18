@@ -20,7 +20,7 @@
             android:layout_height="200dp"
             android:layout_gravity="center"
             android:fontFamily="@font/montserratlight"
-            android:contentDescription="Create a new account"
+            android:contentDescription="@string/Newacount"
             android:minHeight="0dp"
             android:minWidth="0dp"
             android:tint="@color/white"
@@ -29,23 +29,25 @@
 
 
         <EditText
+            android:autofillHints="@string/email"
             android:id="@+id/email"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
             android:fontFamily="@font/montserratlight"
-            android:hint="Email"
+            android:hint="@string/email"
             android:inputType="textEmailAddress"
             android:textColor="@android:color/black"
             android:textColorHint="@android:color/darker_gray" />
 
 
         <EditText
+            android:autofillHints="@string/Password"
             android:id="@+id/password"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
-            android:hint="Password"
+            android:hint="@string/Password"
             android:fontFamily="@font/montserratlight"
             android:inputType="textPassword"
             android:textColor="@android:color/black"
@@ -59,7 +61,7 @@
             android:layout_marginTop="20dip"
             android:background="@color/accent"
             android:fontFamily="@font/montserratlight"
-            android:text="Login"
+            android:text="@string/Login"
             android:textColor="@android:color/black" />
 
         <TextView
@@ -70,7 +72,7 @@
             android:layout_marginTop="20dip"
             android:background="@null"
             android:fontFamily="@font/montserratlight"
-            android:text="Create a new account"
+            android:text="@string/Newacount"
             android:textAllCaps="false"
             android:textSize="15sp" />
 

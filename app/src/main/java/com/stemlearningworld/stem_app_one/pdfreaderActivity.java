@@ -1,35 +1,18 @@
 package com.stemlearningworld.stem_app_one;
 
-import android.content.Context;
-import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 
 import com.github.barteksc.pdfviewer.PDFView;
-import com.google.android.gms.tasks.OnFailureListener;
-import com.google.android.gms.tasks.OnSuccessListener;
-import com.google.firebase.database.DataSnapshot;
-import com.google.firebase.database.DatabaseError;
-import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.database.ValueEventListener;
-import com.google.firebase.storage.FirebaseStorage;
-import com.google.firebase.storage.StorageReference;
 
 import java.io.BufferedInputStream;
-import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.HttpURLConnection;
-import java.net.MalformedURLException;
 import java.net.URL;
-import java.net.URLConnection;
-import java.util.stream.Stream;
 
-import static com.stemlearningworld.stem_app_one.MainActivity.dir1;
+import static com.stemlearningworld.stem_app_one.MainActivity.BookRef;
 
 public class pdfreaderActivity extends AppCompatActivity{
 
@@ -42,7 +25,7 @@ public class pdfreaderActivity extends AppCompatActivity{
         setContentView(R.layout.activity_pdfreader);
         pdfView = (PDFView) findViewById(R.id.pdfView);
 
-        new RetrievePDFStream().execute(dir1);
+        new RetrievePDFStream().execute(BookRef);
     }
 
 

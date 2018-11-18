@@ -11,11 +11,10 @@
 
 
     <TextView
-        android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:lineSpacingExtra="8sp"
-        android:text="After Login "
+        android:text="@string/byebye"
         android:textSize="36sp"
         android:textStyle="bold" />
 
@@ -24,6 +23,6 @@
         android:id="@+id/signout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="LogOut" />
+        android:text="@string/Logout" />
 
 </LinearLayout>

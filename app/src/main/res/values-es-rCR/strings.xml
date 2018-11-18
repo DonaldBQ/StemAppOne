@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Racoon App</string>
-    <string name="Settings_name">Configuracion</string>
+    <string name="app_name">AppBoard</string>
     <string name="Files_name">Archivos</string>
-    <string name="Audio_name">Audio</string>
     <string name="Reading_name">Lectura</string>
     <string name="Video_name">Video</string>
     <string name="Exams_name">Exámenes</string>
@@ -12,16 +10,22 @@
     <string name="StemTools_name">Herramientas Stem</string>
     <string name="Homework_name">Tarea</string>
     <string name="company_name">Centro de Aprendizaje STEM</string>
-    <string name="about_name">Acerca de</string>
 
     <!--Folder Activity-->
     <string name="Group1_name">Grupo 1</string>
-    <string name="Group2_name">Gropo 2</string>
+    <string name="Group2_name">Grupo 2</string>
     <string name="Group3_name">Grupo 3</string>
     <string name="Practices_name">Practica</string>
     <string name="Books_name">Libros</string>
     <string name="Photos_name">Fotos</string>
     <string name="Manual_name">Manual</string>
     <string name="Other_name">Otros</string>
-    <string name="Teacher_name">Profe</string>
+    <string name="email">Correo Electronico</string>
+    <string name="word_ref">Word Reference</string>
+    <string name="failed">FALLÓ</string>
+
+    <string name="byebye">¡Fue bueno verte! Adios</string>
+    <string name="Newacount">Crear cuenta nueva</string>
+    <string name="Password">Contraseña</string>
+    <string name="alreadymember">¿Ya eres miembro? Registrate</string>
 </resources>

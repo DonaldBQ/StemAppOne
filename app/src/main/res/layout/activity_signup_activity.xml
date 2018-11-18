@@ -17,19 +17,21 @@
         <!-- Email Label -->
 
         <EditText
+            android:autofillHints="@string/email"
             android:id="@+id/input_email"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Email"
+            android:hint="@string/email"
             android:inputType="textEmailAddress" />
 
         <!-- Password Label -->
 
         <EditText
+            android:autofillHints="@string/Password"
             android:id="@+id/input_password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Password"
+            android:hint="@string/Password"
             android:inputType="textPassword" />
 
         <!-- Signup Button -->
@@ -40,7 +42,7 @@
             android:layout_marginBottom="24dp"
             android:layout_marginTop="24dp"
             android:padding="12dp"
-            android:text="Create Account" />
+            android:text="@string/Newacount" />
 
         <TextView
             android:id="@+id/login_page"
@@ -48,8 +50,8 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="24dp"
             android:gravity="center"
-            android:text="Already a member? Login"
-            android:textSize="16dip" />
+            android:text="@string/alreadymember"
+            android:textSize="16sp" />
 
     </LinearLayout>
 
