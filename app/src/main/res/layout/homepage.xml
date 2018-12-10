@@ -9,20 +9,32 @@
     tools:context=".Home_screen"
     android:orientation="vertical">
 
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:fontFamily="@font/montserratlight"
+        android:contentDescription="@string/Newacount"
+        android:minHeight="0dp"
+        android:minWidth="0dp"
 
-    <TextView
+        android:scaleType="fitCenter"
+        android:src="@drawable/logostem2" />
+
+   <!-- <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:lineSpacingExtra="8sp"
         android:text="@string/byebye"
-        android:textSize="36sp"
+        android:textSize="22sp"
         android:textStyle="bold" />
-
+-->
 
     <Button
         android:id="@+id/signout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@color/accent"
         android:text="@string/Logout" />
 
 </LinearLayout>

@@ -17,15 +17,15 @@
 
         <ImageView
             android:layout_width="match_parent"
-            android:layout_height="200dp"
+            android:layout_height="300dp"
             android:layout_gravity="center"
             android:fontFamily="@font/montserratlight"
             android:contentDescription="@string/Newacount"
             android:minHeight="0dp"
             android:minWidth="0dp"
-            android:tint="@color/white"
+            android:elevation="50dp"
             android:scaleType="fitCenter"
-            android:src="@mipmap/ic_action_users" />
+            android:src="@drawable/logostem2" />
 
 
         <EditText

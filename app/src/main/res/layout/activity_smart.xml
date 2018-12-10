@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:theme="@style/StemLearningWorldTheme"
-
+    android:background="@drawable/banner3"
     android:weightSum="10"
     tools:context="com.stemlearningworld.stem_app_one.MainActivity">
 
@@ -19,54 +19,62 @@
 
             >
 
-            <TextView
-
+            <ImageView
                 android:layout_width="match_parent"
-                android:layout_height="100dp"
-                android:background="@drawable/banner_logo"
-                android:textAlignment="textStart"
-                android:paddingBottom="10dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
                 android:fontFamily="@font/montserratlight"
-                android:text="@string/company_name"
-                android:textSize="18sp"
-                android:gravity="bottom"
-                android:textColor="@color/foreground_material_dark"
-                tools:ignore="RtlCompat" />
+                android:contentDescription="@string/Newacount"
+                android:minHeight="0dp"
+                android:minWidth="0dp"
+
+                android:scaleType="fitCenter"
+                android:src="@drawable/logostem2" />
+
+            <LinearLayout
+
+                android:weightSum="10"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+
+
+                <com.github.mikephil.charting.charts.HorizontalBarChart
+                    android:layout_weight="10"
+                    android:id="@+id/chart1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="150dp"
+                    android:background="@android:color/white"
+                    />
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:weightSum="10"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+
+
+                <com.github.mikephil.charting.charts.HorizontalBarChart
+                    android:layout_weight="10"
+                    android:id="@+id/chartNoise1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="150dp"
+                    android:background="@android:color/white"
+                    />
+
+
+            </LinearLayout>
+
 
         </LinearLayout>
 
-    <LinearLayout
-        android:background="@color/bookcolor"
-        android:weightSum="10"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
 
-
-
-        <com.github.mikephil.charting.charts.HorizontalBarChart
-            android:layout_weight="8"
-            android:id="@+id/chart1"
-            android:layout_width="wrap_content"
-            android:layout_height="150dp"
-            android:background="@android:color/white"
-            />
-
-
-
-        <TextView
-            android:gravity="center_vertical"
-            android:id="@+id/textView"
-            android:textAlignment="center"
-            android:textSize="20dp"
-            android:text="Lux"
-            android:textColor="@color/white"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent" />
-
-
-
-
-    </LinearLayout>
 
 </LinearLayout>

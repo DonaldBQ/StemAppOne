@@ -21,14 +21,16 @@ import com.github.mikephil.charting.interfaces.datasets.IBarDataSet;
 
 import java.util.ArrayList;
 
-public class LightTester extends AppCompatActivity implements SensorEventListener{
+public class LightMeter extends AppCompatActivity implements SensorEventListener{
 
     TextView textView;
+    TextView textViewNoise;
     SensorManager sensorManager;
     Sensor sensor;
     static double lightInput;
 
     HorizontalBarChart LightChart;
+    HorizontalBarChart NoiseChart;
     int optimalLux = 700;
 
     @Override
@@ -36,7 +38,7 @@ public class LightTester extends AppCompatActivity implements SensorEventListene
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_smart);
 
-        textView = (TextView) findViewById(R.id.textView);
+
         sensorManager = (SensorManager)getSystemService(Service.SENSOR_SERVICE);
         sensor = sensorManager.getDefaultSensor(Sensor.TYPE_LIGHT);
 
@@ -144,6 +146,52 @@ public class LightTester extends AppCompatActivity implements SensorEventListene
         chart.notifyDataSetChanged();
         chart.invalidate();
     }
+
+    //**************NoiseChart**********************
+    private void horizontalChartNoise(float value){
+        String[] labels = {
+                "Light",
+                "Noise"
+        };
+
+        ArrayList<BarEntry> valueSet1 = new ArrayList<>();
+        BarEntry EntriesLight = new BarEntry(0, (float) value); // Light value
+        valueSet1.add(EntriesLight);
+
+        ArrayList<BarEntry> valueSet2 = new ArrayList<>();
+        BarEntry EntriesNoise = new BarEntry(0,optimalLux ); // Light value
+        valueSet2.add(EntriesNoise);
+
+
+        BarDataSet barDataSet1 = new BarDataSet(valueSet1, "Cantidad de luz actual");
+
+        barDataSet1.setColors(new int[] { R.color.accent }, this);
+
+        BarDataSet barDataSet2 = new BarDataSet(valueSet2, "Cantidad de luz óptima");
+
+        barDataSet2.setColors(new int[] { R.color.audiocolor}, this);
+
+//        BarDataSet barDataSet2 = new BarDataSet(valueSet2, "Brand 2");
+//        barDataSet2.setColors(ColorTemplate.COLORFUL_COLORS);
+
+        ArrayList<IBarDataSet> dataSets = new ArrayList<IBarDataSet>();
+
+        BarData GoalsBardata = new BarData(dataSets);
+        HorizontalBarChart chartNoise = (HorizontalBarChart) findViewById(R.id.chart1);
+        chartNoise.setData(GoalsBardata);
+        chartNoise.animateXY(5000, 5000);
+        chartNoise.setDrawGridBackground(true);
+        chartNoise.setDrawValueAboveBar(true);
+        chartNoise.setBackgroundColor(Color.WHITE);
+        chartNoise.getXAxis().setValueFormatter(new LabelFormatter(labels));
+        chartNoise.getAxisRight().setDrawLabels(false);
+        chartNoise.getXAxis().setDrawLabels(false);
+        chartNoise.getAxisLeft().setAxisMinimum(0);
+        chartNoise.getAxisRight().setAxisMinimum((float) (lightInput + lightInput * 0.2));
+        chartNoise.notifyDataSetChanged();
+        chartNoise.invalidate();
+    }
+    //*************End NoiseChart*******************
     public class LabelFormatter implements IAxisValueFormatter {
         private final String[] mLabels;
 

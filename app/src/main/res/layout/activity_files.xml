@@ -23,19 +23,17 @@
 
             >
 
-            <TextView
-
+            <ImageView
                 android:layout_width="match_parent"
-                android:layout_height="300dp"
-                android:background="@drawable/banner_logo"
-                android:textAlignment="textStart"
-                android:paddingBottom="10dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
                 android:fontFamily="@font/montserratlight"
-                android:text="@string/company_name"
-                android:textSize="18sp"
-                android:gravity="bottom"
-                android:textColor="@color/foreground_material_dark"
-                tools:ignore="RtlCompat" />
+                android:contentDescription="@string/Newacount"
+                android:minHeight="0dp"
+                android:minWidth="0dp"
+                android:background="@drawable/banner3"
+                android:scaleType="fitCenter"
+                android:src="@drawable/logostem2" />
 
 
             <!--First row-->
