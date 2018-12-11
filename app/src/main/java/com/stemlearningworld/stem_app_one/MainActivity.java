@@ -6,6 +6,7 @@ import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.LinearLayout;
 
 import com.google.firebase.database.DataSnapshot;
@@ -102,14 +103,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(MainActivity.this, youtubeActivity.class));
             }
         });
-       //Button Archivos
-        LinearLayout FilesLayout = (LinearLayout)findViewById(R.id.filesbutton);
-        FilesLayout.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(MainActivity.this, FilesActivity.class));
-            }
-        });
+
         //Button Word Reference
         LinearLayout DictionaryLayout = (LinearLayout)findViewById(R.id.wordref);
         DictionaryLayout.setOnClickListener(new View.OnClickListener() {
@@ -120,14 +114,13 @@ public class MainActivity extends AppCompatActivity {
                startActivity(intent);
             }
         });
-        //Button Smart
-        LinearLayout SmartLayout = (LinearLayout)findViewById(R.id.smart);
-        SmartLayout.setOnClickListener(new View.OnClickListener() {
+        //Button Recording
+        LinearLayout RecordingLayout = (LinearLayout)findViewById(R.id.recording);
+        RecordingLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-               startActivity(new Intent(MainActivity.this, LightMeter.class));
-
-
+                Intent intent = new Intent(Intent.ACTION_VIEW);
+                startActivity(new Intent(MainActivity.this, RecordingTool.class));
             }
         });
     //********End: Getting Linear Layouts and implementing them on click listener*******

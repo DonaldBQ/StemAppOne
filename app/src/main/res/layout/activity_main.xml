@@ -44,8 +44,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="horizontal"
-                android:weightSum="3"
-                android:elevation="10dp"
+                android:weightSum="2"
+
                 >
                 <LinearLayout
                     android:id="@+id/bookButton"
@@ -112,37 +112,7 @@
 
                 </LinearLayout>
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:layout_margin="2dp"
-                    android:orientation="vertical"
-                    android:background="@color/testcolor"
-                    android:elevation="10dp"
-                    >
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="3dp"
-                        android:layout_gravity="center"
-                        android:src="@mipmap/ic_action_paste"
-                        android:tint="@color/icons"
-                        android:contentDescription="@null"
-                        />
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:padding="5dp"
-                        android:layout_marginTop="30dp"
-                        android:background="@color/testcolorlight"
-                        android:text="@string/Exams_name"
-                        android:textColor="@color/icons"
-                        android:textAlignment="center"
-                        android:fontFamily="@font/montserratlight"
-                        />
 
-                </LinearLayout>
 
             </LinearLayout>
             <!--End First row-->
@@ -155,7 +125,7 @@
                 android:layout_height="match_parent"
                 android:orientation="horizontal"
                 android:weightSum="3"
-                android:elevation="10dp"
+
                 >
                 <LinearLayout
                     android:id="@+id/videoButton"
@@ -263,10 +233,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:elevation="10dp"
+
                 android:orientation="horizontal"
-                android:weightSum="3">
+                android:weightSum="2">
                 <LinearLayout
+                    android:id="@+id/recording"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_margin="2dp"
@@ -334,38 +305,7 @@
 
                 </LinearLayout>
 
-                <LinearLayout
-                    android:id="@+id/filesbutton"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_margin="2dp"
-                    android:layout_weight="1"
-                    android:background="@color/filescolor"
-                    android:elevation="10dp"
-                    android:orientation="vertical"
-                    >
 
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_marginTop="3dp"
-                        android:src="@mipmap/ic_action_folder_open"
-                        android:tint="@color/icons"
-                        android:contentDescription="@null"
-                        />
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="30dp"
-                        android:background="@color/filescolorlight"
-                        android:fontFamily="@font/montserratlight"
-                        android:padding="5dp"
-                        android:text="@string/Files_name"
-                        android:textAlignment="center"
-                        android:textColor="@color/icons"
-                        />
-                </LinearLayout>
             </LinearLayout>
             <!-- End third row-->
         </LinearLayout>
