@@ -62,12 +62,12 @@ public class signin extends AppCompatActivity {
 
         setContentView(R.layout.activity_signin);
 
-        inputEmail = (EditText) findViewById(R.id.email);
-        inputPassword = (EditText) findViewById(R.id.password);
-        Button ahlogin = (Button) findViewById(R.id.ah_login);
-        progressBar = (ProgressBar) findViewById(R.id.progressBar);
-        TextView btnSignIn = (TextView) findViewById(R.id.sign_in_button);
-        button = (SignInButton) findViewById(R.id.sign_in_google);
+        inputEmail = findViewById(R.id.email);
+        inputPassword = findViewById(R.id.password);
+        Button ahlogin = findViewById(R.id.ah_login);
+        progressBar = findViewById(R.id.progressBar);
+        TextView btnSignIn = findViewById(R.id.sign_in_button);
+        button = findViewById(R.id.sign_in_google);
 
         button.setOnClickListener(new View.OnClickListener() {
             @Override

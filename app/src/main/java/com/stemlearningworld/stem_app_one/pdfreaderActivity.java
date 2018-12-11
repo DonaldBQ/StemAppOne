@@ -23,7 +23,7 @@ public class pdfreaderActivity extends AppCompatActivity{
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pdfreader);
-        pdfView = (PDFView) findViewById(R.id.pdfView);
+        pdfView = findViewById(R.id.pdfView);
 
         new RetrievePDFStream().execute(BookRef);
     }

@@ -1,19 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".RecordingTool">
+    tools:context=".RecordingTool"
+    android:orientation="horizontal">
 
-    <com.camerakit.CameraKitView
+
+    <com.wonderkiln.camerakit.CameraView xmlns:app="http://schemas.android.com/apk/res-auto"
         android:id="@+id/camera"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:adjustViewBounds="true"
-        android:keepScreenOn="true"
-        app:camera_flash="auto"
-        app:camera_facing="back"
-        app:camera_focus="continuous"
-        app:camera_permissions="camera" />
-</android.support.constraint.ConstraintLayout>
+        android:layout_height="match_parent"
+        app:ckCropOutput="false"
+        app:ckDoubleTapToToggleFacing="true"
+        app:ckFacing="back"
+        app:ckFlash="off"
+        app:ckFocus="tapWithMarker"
+        app:ckJpegQuality="100"
+        app:ckMethod="standard"
+        app:ckPinchToZoom="true"
+        app:ckVideoQuality="highest"
+        app:ckZoom="2.0" />
+
+    <Button
+        android:layout_marginTop="10dp"
+        android:background="@color/accent"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/recordButton"
+        android:text="Record"
+        />
+
+</RelativeLayout>

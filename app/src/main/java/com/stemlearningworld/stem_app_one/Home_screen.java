@@ -25,7 +25,7 @@ public class Home_screen extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.homepage);
 
-        Button button = (Button) findViewById(R.id.signout);
+        Button button = findViewById(R.id.signout);
         mAuth = FirebaseAuth.getInstance();
 
         mAuthListner = new FirebaseAuth.AuthStateListener() {

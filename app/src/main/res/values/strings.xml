@@ -1,30 +1,18 @@
 <resources>
     <string name="app_name">AppBoard</string>
-    <string name="Files_name">Files</string>
     <string name="Reading_name">Student Book</string>
     <string name="Video_name">Video</string>
-    <string name="Exams_name">Exams</string>
     <string name="Payment_name">Payment</string>
     <string name="RecordingTool_name">Recording Tool</string>
     <string name="StemTools_name">Stem Tools</string>
     <string name="Homework_name">Workbook</string>
-    <string name="company_name">App Board</string>
 
     <!--Folder Activity-->
-    <string name="Group1_name">Group 1</string>
-    <string name="Group2_name">Group 2</string>
-    <string name="Group3_name">Group 3</string>
-    <string name="Practices_name">Practices</string>
-    <string name="Books_name">Student Book</string>
-    <string name="Photos_name">Photos</string>
-    <string name="Manual_name">Manual</string>
-    <string name="Other_name">Other</string>
 
     <string name="email">Email</string>
     <string name="word_ref">Word Reference</string>
 
 
-    <string name="byebye">Nice to see you! Bye</string>
     <string name="Logout" translatable="false">Logout</string>
     <string name="Newacount">Create a new account</string>
     <string name="Password">Password</string>
